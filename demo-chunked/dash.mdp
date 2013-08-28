@@ -5,7 +5,7 @@
   <AdaptationSet mimeType="video/mp4" minBandwidth="284592" maxBandwidth="781392" minWidth="640" maxWidth="1920" minHeight="480" maxHeight="1080" segmentAlignment="true" subsegmentAlignment="true" bitstreamSwitching="true">
    <ContentComponent id="1" contentType="video"/>
    <Representation bandwidth="781392" id="h264_high" startWithRAP="true" mimeType="video/mp4" width="1920" height="1080">
-    <SegmentList timescale="1000" duration="1933">
+    <SegmentList timescale="1000" duration="2000">
      <Initialization sourceURL="h264_high/dash.m4s"/>
      <SegmentURL media="h264_high/dash_fragment_0.m4s"/>
      <SegmentURL media="h264_high/dash_fragment_1.m4s"/>
@@ -42,7 +42,7 @@
     </SegmentList>
    </Representation>
    <Representation bandwidth="467112" id="h264_mid" startWithRAP="true" mimeType="video/mp4" width="1280" height="720">
-    <SegmentList timescale="1000" duration="1933">
+    <SegmentList timescale="1000" duration="2000">
      <Initialization sourceURL="h264_mid/dash.m4s"/>
      <SegmentURL media="h264_mid/dash_fragment_0.m4s"/>
      <SegmentURL media="h264_mid/dash_fragment_1.m4s"/>
