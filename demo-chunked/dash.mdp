@@ -2,6 +2,13 @@
 <MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema" xmlns="urn:mpeg:mpegB:schema:DASH:MPD:DIS2011" xsi:schemaLocation="urn:mpeg:mpegB:schema:DASH:MPD:DIS2011" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" type="static" mediaPresentationDuration="PT0H01M04.933333321S" minBufferTime="PT2.000S">
  <BaseUrl>./</BaseUrl>
  <Period start="PT0.000S" duration="PT64.933S" segmentAlignment="true" bitstreamSwitching="true">
+  <AdaptationSet mimeType="application/ttml+xml" lang="en" segmentAlignment="true">
+   <Representation id="subs_en" mimeType="application/ttml+xml" startWithSAP="1" bandwidth="606">
+    <SegmentList timescale="1000" duration="120000">
+     <SegmentURL media="subs/en/demo.tt"/>
+    </SegmentList>
+   </Representation>
+  </AdaptationSet>
   <AdaptationSet mimeType="video/mp4" minBandwidth="284592" maxBandwidth="781392" minWidth="640" maxWidth="1920" minHeight="480" maxHeight="1080" segmentAlignment="true" subsegmentAlignment="true" bitstreamSwitching="true">
    <ContentComponent id="1" contentType="video"/>
    <Representation bandwidth="781392" id="h264_high" startWithRAP="true" mimeType="video/mp4" width="1920" height="1080">
