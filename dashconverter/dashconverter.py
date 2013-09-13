@@ -43,6 +43,7 @@ class DashConverter(object):
         self.dashsink.set_property("fragment-duration", self.config.fragment_duration)
         self.dashsink.set_property("is-live", self.config.is_live)
         self.dashsink.set_property("chunked", self.config.chunked)
+        self.dashsink.set_property("title", self.config.title)
         if self.config.base_url:
             self.dashsink.set_property("base-url", self.config.base_url)
 
